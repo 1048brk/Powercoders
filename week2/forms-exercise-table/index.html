@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise1</title>
+</head>
+
+<body>
+    <h1>Profil</h1>
+    <h3>Here we have a form, please fill correctly </h3>
+
+    <form>
+        <fieldset>
+            <legend>Personal Data</legend>
+            <table>
+                <tr>
+                    <td>Title</td>
+                    <td><input type="text" placeholder="Dr. Hc"></td>
+                <tr>
+
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" placeholder="Peter"></td>
+                </tr>
+
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <label for="gender">Man</label>
+                        <input name="gender" type="radio" id="gender" required />
+
+                        <label for="gender">Woman</label>
+                        <input name="gender" type="radio" id="gender" required />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Language</td>
+                    <td>
+                        <label for="fr">FR</label>
+                        <input name="fr" type="radio" id="fr" required />
+
+                        <label for="de">DE</label>
+                        <input name="de" type="radio" id="de" required />
+
+                        <label for="it">IT</label>
+                        <input name="it" type="radio" id="it" required />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Contact</legend>
+            <table>
+                <tr>
+                    <td>Telephone</td>
+                    <td><input type="number" placeholder=""></td>
+                <tr>
+
+                <tr>
+                    <td>Mobile</td>
+                    <td><input type="number" placeholder="optional"></td>
+                </tr>
+
+                <tr>
+                    <td>House Number</td>
+                    <td><input name="number" placeholder="optional"></td>
+                </tr>
+
+                <tr>
+                    <td>Fax</td>
+                    <td><input name="number" placeholder="optional"></td>
+                </tr>
+
+                <tr>
+                    <td>Mail 1</td>
+                    <td><input name="email" placeholder=""></td>
+                </tr>
+
+                <tr>
+                    <td>Email 2</td>
+                    <td><input name="email" placeholder="optional"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+
+
+
+        <fieldset>
+            <legend>Adress</legend>
+            <table>
+                <tr>
+                    <td>Company</td>
+                    <td><input type="text" placeholder=""></td>
+                <tr>
+
+                <tr>
+                    <td>Second Company</td>
+                    <td><input type="text" placeholder="optional"></td>
+                </tr>
+
+                <tr>
+                    <td>Homapage</td>
+                    <td><input type="text" placeholder="optional"></td>
+                </tr>
+
+                <tr>
+                    <td>Adress/Number</td>
+                    <td>
+                        <input name="adress" type="text" id="adress" placeholder="Musterstrasse" />
+                        <input name="number" type="number" id="number" placeholder="33" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Postcode</td>
+                    <td><input type="text" placeholder="optional"></td>
+                </tr>
+
+                <tr>
+                    <td>OLZ/Ort</td>
+                    <td>
+                        <input name="plz" type="number" placeholder="8800" />
+                        <input name="ort" type="text" placeholder="Musterstrasse" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Canton/City</td>
+                    <td>
+                        <input name="canton" type="text" placeholder="ZH" />
+                        <input name="city" type="text" placeholder="Geneve" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+    </form> <br>
+
+
+    <button type="submit">Submit</button>
+
+</body>
+
+</html>
