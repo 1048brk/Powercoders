@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Character Counting App</title>
+    <script>
+      function countChars() {
+        // get the value of the input field
+        const inputString = document.getElementById('input-string').value;
+
+        // get the length of the input string
+        const charCount = inputString.length;
+
+        // display the input string and character count
+        document.getElementById('output').textContent = `Input String: ${inputString}\nCharacter Count: ${charCount}`;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Character Counting App</h1>
+    <label for="input-string">Enter a string:</label>
+    <input type="text" id="input-string">
+    <button onclick="countChars()">Count Characters</button>
+    <pre id="output"></pre>
+  </body>
+</html>

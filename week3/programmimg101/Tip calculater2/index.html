@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculater 2</title>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td><label for="bill">Enter your bill amount</label> <input type="number" id="bill"></td>
+        </tr>
+        <tr>
+            <td><label for="tipPerc">Enter your tip percentage</label> <input type="number" id="tipPerc" value="15"
+                    min="15" max="50"></td>
+        </tr>
+    </table><br>
+    <button id="calculate" onclick="calculate()">Calculate</button> <br><br>
+    <label for="tip">Your tip amount: </label>
+    <span id="tip"></span>
+    <br> <br>
+    <label for="total">Your total bill include the tip: </label>
+    <span id="total"></span>
+    ​
+    <script>
+        let bill = document.getElementById("bill");
+        let tipPerc = document.getElementById("tipPerc");
+        let tip = document.getElementById("tip");
+        let total = document.getElementById("total");
+
+        function calculate() {
+            let billval = bill.value;
+            let tipval = tipPerc.value;
+            let tipLast = billval * (tipval / 100);
+            tip.innerHTML = tipLast;
+            total.innerHTML = parseInt(billval) + parseInt(tipLast);
+        }
+    </script>
+</body>
+
+</html>

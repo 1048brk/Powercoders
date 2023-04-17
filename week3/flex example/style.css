@@ -1,0 +1,78 @@
+html{
+    box-sizing: border-box;
+    
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+*{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: lightgray;
+    margin: 0px;
+}
+main{
+    background-color: white;
+    margin: 40px;
+    text-align: center;
+    padding: 60px 30px;
+}
+
+span{
+    font-weight:bold;
+}
+
+h1, h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    margin: 0 0 40px 0;
+    
+    color: grey;
+
+}
+h1 span{
+    color: black;
+}
+
+section{
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(470px, 1fr));
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+
+}
+
+
+div{
+    margin: 10px;
+}
+
+button{
+    padding: 15px;
+    width: 200px;
+    margin: 40px auto;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: white;
+    border: 2px solid black;
+
+}
+
+
+
+img{
+    max-width: 100%;
+    width: auto;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quote Display</title>
+  <style>
+    input,
+    button {
+      font-size: 1.2rem;
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border-radius: 0.25rem;
+      border: none;
+      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0062cc;
+    }
+
+    .quote {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.25rem;
+      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Quote Display</h1>
+  <form>
+    <label for="quote">Quote:</label>
+    <input type="text" id="quote" name="quote"><br>
+    <label for="author">Author:</label>
+    <input type="text" id="author" name="author"><br>
+    <button type="button" onclick="displayQuote()">Display Quote</button>
+  </form>
+  <div class="quote" id="quote-display"></div>
+
+  <script>
+    function displayQuote() {
+      const quote = document.getElementById("quote").value;
+      const author = document.getElementById("author").value;
+      const quoteDisplay = document.getElementById("quote-display");
+
+      quoteDisplay.textContent = author + ' says, "' + quote + '"';
+    }
+  </script>
+</body>
+
+</html>

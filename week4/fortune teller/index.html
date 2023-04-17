@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fortune Teller</title>
+    <script>
+        function tellFortune() {
+            var numChildren = document.getElementById("numChildren").value;
+            var partnerName = document.getElementById("partnerName").value;
+            var geoLocation = document.getElementById("geoLocation").value;
+            var jobTitle = document.getElementById("jobTitle").value;
+
+            var fortune = "You will be a " + jobTitle + " in " + geoLocation + ", and married to " + partnerName + " with " + numChildren + " kids.";
+            document.getElementById("fortuneOutput").innerHTML = fortune;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Fortune Teller</h1>
+    <form>
+        <label for="numChildren">Number of Children:</label>
+        <input type="text" id="numChildren"><br>
+
+        <label for="partnerName">Partner's Name:</label>
+        <input type="text" id="partnerName"><br>
+
+        <label for="geoLocation">Geographic Location:</label>
+        <input type="text" id="geoLocation"><br>
+
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle"><br>
+
+        <button type="button" onclick="tellFortune()">Tell My Fortune</button>
+    </form>
+
+    <div id="fortuneOutput"></div>
+</body>
+
+</html>

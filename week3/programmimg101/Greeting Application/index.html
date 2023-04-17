@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Greeting Application</title>
+  </head>
+  <body>
+    <h1>Greeting Application</h1>
+    <p>Enter your name:</p>
+    <input type="text" id="nameInput">
+    <button onclick="printGreeting()">Submit</button>
+    <br><br>
+    <div id="greetingOutput"></div>
+
+    <script>
+      function printGreeting() {
+        const name = document.getElementById("nameInput").value;
+        const greeting = "Hi " + name;
+        document.getElementById("greetingOutput").innerHTML = greeting;
+      }
+    </script>
+  </body>
+</html>
