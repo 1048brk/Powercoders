@@ -1,15 +1,15 @@
-// Say Hello:
+// // Say Hello:
 
 let name = prompt("Please enter your name");
 alert("Hello " + name);
 
 
-// Counting the number of characters:
+// // Counting the number of characters:
 
 let input = prompt("Please write a word");
 console.log("Your word is " + input + " and it consists of " + input.length + " characters")
 
-// Printing quotes:
+// // Printing quotes:
 
 let author =prompt("Please enter an author");
 let quote =prompt("Please enter his sayings");
@@ -27,7 +27,7 @@ console.log(`You will be a ${jobTitle} in ${geographicLocation}, and married to 
 
 // Age calculator:
 
-let birthYear= 1990;
+const birthYear= 1990;
 let futureYear= 2040;
-let myAge= futureYear-birthYear;
+const myAge= futureYear-birthYear;
 console.log("I will be either " + myAge + " or "+ (myAge-1) + " years old in " + futureYear + ".");

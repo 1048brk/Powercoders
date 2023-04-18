@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Tables</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let num = +prompt("Enter a number between 0 and 10");
+        while (num < 0 || num > 10 || isNaN(num)) {
+            alert("Wrong input, please try again between 0 and 10");
+            num = +prompt("Enter a number between 0 and 10");
+        }
+        let result = num * 9;
+        alert(num + " * 9 = " + result);
+
+        // Multiplication tables 2.0 ==> And here we can see the same in console
+
+        for (let i = 0; i <= 10; i++) {
+            const result2 = i * 9;
+            console.log(i + " * 9 = " + result2);
+        }
+    </script>
+</body>
+
+</html>
