@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Retirement Calculator</title>
+</head>
+
+<body>
+    <h1>Retirement Calculator</h1>
+
+    <p>What is your age?</p>
+    <input type="number" id="currentAge">
+
+    <p>At what age would you like to retire?</p>
+    <input type="number" id="retirementAge">
+
+    <button onclick="calculateRetirement()">Calculate</button>
+
+    <p id="output"></p>
+
+    <script>
+        function calculateRetirement() {
+            // Get the current year
+            const currentYear = new Date().getFullYear();
+
+            // Get the user's current age and retirement age
+            const currentAge = parseInt(document.getElementById("currentAge").value);
+            const retirementAge = parseInt(document.getElementById("retirementAge").value);
+
+            if (currentAge <= 0 || retirementAge <= currentAge) {
+                alert("Please enter a valid age.");
+                return;
+            }
+
+            // Calculate the years left until retirement
+            const yearsLeft = retirementAge - currentAge;
+
+            // Calculate the year when the user can retire
+            const retirementYear = currentYear + yearsLeft;
+
+            // Display the output to the user
+            document.getElementById("output").innerHTML = `We are in ${currentYear} and you have ${yearsLeft} years until your retirement. So you can retire in ${retirementYear}.`;
+        }
+    </script>
+</body>
+
+</html>

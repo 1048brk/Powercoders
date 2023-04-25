@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome Translator</title>
+</head>
+
+<body>
+    <h1>Welcome Translator</h1>
+    <p>Select a language:</p>
+    <select id="language">
+        <option value="en">English</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+    </select>
+    <button>Translate</button>
+    <p id="output"></p>
+
+    <script>
+        document.querySelector("button").addEventListener("click", translate);
+        function translate() {
+            var language = document.getElementById("language").value;
+            var message = "";
+
+            switch (language) {
+                case "fr":
+                    message = "Bienvenue!";
+                    break;
+                case "de":
+                    message = "Willkommen!";
+                    break;
+                default:
+                    message = "Welcome!";
+                    break;
+            }
+            document.getElementById("output").innerHTML = message;
+        }
+    </script>
+
+</body>
+
+</html>
